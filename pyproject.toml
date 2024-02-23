@@ -4,10 +4,14 @@ version = "0.1.0"
 description = ""
 authors = ["Christian Bergschneider <magiclake@gmx.de>"]
 readme = "README.md"
+packages = [
+    { include = "ezml", from = "." },
+]
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
-
+tensorflow = "^2.5.0"
 
 [build-system]
 requires = ["poetry-core"]
